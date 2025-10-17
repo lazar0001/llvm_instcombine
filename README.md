@@ -17,6 +17,4 @@ InstCombine pass se obično koristi u srednjem delu LLVM optimizacijskog procesa
 
    ```bash
    clang -S -emit-llvm test.c -o test.ll
-
-   ```bash
    opt -load LLVMInstCombineNew.so -enable-new-pm=0 -instcombine-new test.ll -S -o tmp.ll
